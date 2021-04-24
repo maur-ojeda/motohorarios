@@ -11,8 +11,9 @@ import Bloquehorario from './components/bloquehorario';
 
 ReactDOM.render(<React.StrictMode >
 
+<App />
 
-  <Bloquehorario />
+<Bloquehorario />
 
 </React.StrictMode>,
   document.getElementById('root')
