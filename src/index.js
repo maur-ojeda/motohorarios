@@ -1,19 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase/app';
-import './index.css';
-import App from './App';
-
+import './App.scss'
+import Navbar from './components/navbar/Navbar';
+import Bloquehorario from './components/bloquehorario/Bloquehorario';
 
 import reportWebVitals from './reportWebVitals';
-import Bloquehorario from './components/bloquehorario';
+
 
 
 ReactDOM.render(<React.StrictMode >
 
-<App />
+<Navbar />
 
-<Bloquehorario />
+
+<div className="columns">
+  <div className="column is-full">
+  <Bloquehorario />
+  </div>
+</div>
+
+
+
+
 
 </React.StrictMode>,
   document.getElementById('root')
